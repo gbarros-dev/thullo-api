@@ -1,0 +1,8 @@
+{
+  "name": "thullo-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gbarros95/thullo-api.git",
+  "author": "Guilherme Barros <hello@gbarros.dev>",
+  "license": "MIT"
+}
