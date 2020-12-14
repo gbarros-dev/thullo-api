@@ -5,6 +5,12 @@
   "repository": "https://github.com/gbarros95/thullo-api.git",
   "author": "Guilherme Barros <hello@gbarros.dev>",
   "license": "MIT",
+  "scripts": {
+    "preinstall": "yarn global add cross-env",
+    "prepare": "tsc",
+    "start": "NODE_ENV=prod node ./dist/server.js",
+    "dev": "NODE_ENV=dev nodemon ./src/server.ts"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
