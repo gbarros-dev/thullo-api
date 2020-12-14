@@ -8,6 +8,7 @@ export type User = Document & {
   email: string
   avatar: string
   password: string
+  githubId: string
   created: Created
 }
 
