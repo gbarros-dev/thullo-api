@@ -9,7 +9,7 @@ export type Board = Document & {
   description?: string
   user: ObjectId
   visibility: 'private' | 'public'
-  created: Created
+  created?: Created
 }
 
 export type BoardReturn = Return & {
