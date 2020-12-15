@@ -10,7 +10,7 @@ export type AttachmentTask = Document & {
   publicId: string
   task: ObjectId
   user: ObjectId
-  created: Created
+  created?: Created
 }
 
 export type AttachmentTaskReturn = Return & {

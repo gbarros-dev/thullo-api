@@ -43,6 +43,7 @@ export const insertAssignment = async (req: Request, res: Response): Promise<voi
   } catch (err) {
     res.status(err.status ?? httpStatus.INTERNAL_SERVER_ERROR).send({
       message: err.message ?? 'Internal server erro on user login!',
+      error: err.error ?? err,
     })
   }
 }
