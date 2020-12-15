@@ -7,7 +7,7 @@ export type BoardUser = Document & {
   board: ObjectId
   user: ObjectId
   role: 'admin' | 'user'
-  created: Created
+  created?: Created
 }
 
 export type BoardUserReturn = Return & {
