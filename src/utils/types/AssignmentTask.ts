@@ -6,7 +6,7 @@ import { Created } from './Created'
 export type AssignmentTask = Document & {
   user: ObjectId
   task: ObjectId
-  created: Created
+  created?: Created
 }
 
 export type AssignmentTaskReturn = Return & {

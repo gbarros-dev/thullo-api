@@ -55,6 +55,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
     .catch((err) => {
       res.status(err.status ?? httpStatus.INTERNAL_SERVER_ERROR).send({
         message: err.message ?? 'Internal server erro on user login!',
+        error: err.error ?? err,
       })
     })
 }
@@ -75,7 +76,8 @@ export const register = async (req: Request, res: Response): Promise<void> => {
     })
   } catch (err) {
     res.status(err.status ?? httpStatus.INTERNAL_SERVER_ERROR).send({
-      message: err.message ?? 'Internal server erro on user register!',
+      message: err.message ?? 'Internal server erro on user login!',
+      error: err.error ?? err,
     })
   }
 }
@@ -90,7 +92,8 @@ export const findUserLogged = async (req: Request, res: Response): Promise<void>
     })
   } catch (err) {
     res.status(err.status ?? httpStatus.INTERNAL_SERVER_ERROR).send({
-      message: err.message ?? 'Internal server erro on user search!',
+      message: err.message ?? 'Internal server erro on user login!',
+      error: err.error ?? err,
     })
   }
 }
