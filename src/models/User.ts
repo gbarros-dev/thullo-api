@@ -4,10 +4,10 @@ import { model, Schema, Types } from 'mongoose'
 import { User } from '../utils/types/User'
 
 const UserSchema = new Schema<User>({
-  name: { type: String, required: true },
+  username: { type: String, unique: true, required: true },
   email: { type: String, required: true },
   avatar: { type: String },
-  password: { type: String, required: true, select: false },
+  password: { type: String, select: false },
   created: {
     CreatedBy: { type: Types.ObjectId, ref: 'Users' },
     CreatedAt: { type: Date, default: new Date() },

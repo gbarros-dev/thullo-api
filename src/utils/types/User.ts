@@ -4,12 +4,12 @@ import { Return } from './common'
 import { Created } from './Created'
 
 export type User = Document & {
-  name: string
+  username: string
   email: string
-  avatar: string
-  password: string
-  githubId: string
-  created: Created
+  avatar?: string
+  password?: string
+  githubId?: string
+  created?: Created
 }
 
 export type UserReturn = Return & {

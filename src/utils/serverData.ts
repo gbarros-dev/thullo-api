@@ -9,3 +9,5 @@ export const serverPort = process.env.PORT || 3050
 
 export const tokenKey = process.env.TOKEN_KEY
 export const tokenExpires = process.env.TOKEN_EXPIRES || '1h'
+
+export const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000'
